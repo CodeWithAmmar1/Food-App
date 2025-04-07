@@ -1,5 +1,3 @@
-import 'package:app/auth/login_in.dart';
-import 'package:app/auth/sign_up.dart';
 import 'package:app/splash/splash.dart';
 import 'package:flutter/material.dart';
 

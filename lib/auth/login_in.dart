@@ -1,4 +1,5 @@
 import 'package:app/auth/sign_up.dart';
+import 'package:app/homepage/home_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginIn extends StatefulWidget {
@@ -63,7 +64,12 @@ class _LoginInState extends State<LoginIn> {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomePage()),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.purple,
                     shape: RoundedRectangleBorder(
@@ -114,7 +120,7 @@ class _LoginInState extends State<LoginIn> {
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.05),
             ],
           ),
         ),

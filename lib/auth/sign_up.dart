@@ -108,7 +108,7 @@ class _SignUpState extends State<SignUp> {
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.05),
             ],
           ),
         ),
