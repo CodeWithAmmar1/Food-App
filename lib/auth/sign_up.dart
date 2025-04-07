@@ -52,24 +52,41 @@ class _SignUpState extends State<SignUp> {
                       borderRadius: BorderRadius.circular(24),
                     ),
                   ),
-                  child: const Text("Sign up", style: TextStyle(fontSize: 16)),
-                ),
-              ),
-              SizedBox(height: MediaQuery.of(context).size.height * 0.01),
-              const Text("or"),
-              SizedBox(height: MediaQuery.of(context).size.height * 0.01),
-              OutlinedButton(
-                onPressed: () {},
-                style: OutlinedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(vertical: 14),
-                  side: const BorderSide(color: Colors.purple),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(24),
+                  child: const Text(
+                    "Sign up",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
-                child: const Text(
-                  "Sign in with Google",
-                  style: TextStyle(color: Colors.purple, fontSize: 16),
+              ),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+              const Text(
+                "or",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+              SizedBox(
+                width: double.infinity,
+                child: OutlinedButton(
+                  onPressed: () {},
+                  style: OutlinedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(vertical: 14),
+                    side: const BorderSide(color: Colors.purple, width: 2),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                  ),
+                  child: const Text(
+                    "Sign in with Google",
+                    style: TextStyle(
+                      color: Colors.purple,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
               ),
               const Spacer(),
@@ -79,7 +96,7 @@ class _SignUpState extends State<SignUp> {
                   const Text("Already have an account? "),
                   GestureDetector(
                     onTap: () {
-                      // Navigate to login
+                      Navigator.pop(context);
                     },
                     child: const Text(
                       "Login",
