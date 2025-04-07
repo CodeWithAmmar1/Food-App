@@ -1,5 +1,6 @@
 import 'package:app/auth/login_in.dart';
 import 'package:app/auth/sign_up.dart';
+import 'package:app/splash/splash.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Food App',
-      home: const SignUp(),
+      home: const Splash(),
     );
   }
 }
